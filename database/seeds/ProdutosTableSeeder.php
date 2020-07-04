@@ -24,7 +24,7 @@ class ProdutosTableSeeder extends Seeder
             [
                 "nome" => "Açaí Médio",
                 "descricao" => "Tijela de 500ml",
-                "tamanho" => 300,
+                "tamanho" => 500,
                 "unidade" => "ml",
                 "valor" => 13,
                 "tempo_preparo" => 7
