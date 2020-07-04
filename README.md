@@ -11,13 +11,20 @@ Laravel Lumen is a stunningly fast PHP micro-framework for building web applicat
 
 Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
 
-## Contributing
+## Documentation this project
 
-Thank you for considering contributing to Lumen! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### How to set up file permissions for Laravel
 
-## Security Vulnerabilities
+**Your user as owner**
 
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+I prefer to own all the directories and files (it makes working with everything much easier), so I do:
+
+> chown -R 1000:www-data /var/www
+
+Then I give both myself and the webserver permissions:
+
+> find /var/www -type f -exec chmod 664 {} \;
+> find /var/www -type d -exec chmod 775 {} \;
 
 ## License
 
