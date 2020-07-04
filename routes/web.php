@@ -27,4 +27,6 @@ $router->group(['prefix' => 'api'], function () use ($router) {
     $router->get('adicionais', 'AdicionalController@getAll');
     $router->get('adicionais/{id}', 'AdicionalController@getOne');
 
+    $router->get('pedidos', 'PedidoController@getAll');
+    $router->get('pedidos/{id}', 'PedidoController@getOne');
 });
