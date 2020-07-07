@@ -17,11 +17,41 @@ class ProdutoController extends Controller
         //
     }
 
+    /**
+     * @OA\Get(
+     *     tags={"produtos"},
+     *     summary="Retorna uma lista de produtos",
+     *     description="Retorna um objeto de produtos",
+     *     path="/api/produtos",
+     *     @OA\Response(response="200", description="Uma lista com produtos"),
+     * ),
+    */
     public function getAll()
     {
         return response()->json(Produto::all(), 200);
     }
 
+    /**
+     * @OA\Get(
+     *      tags={"produtos"},
+     *      summary="Encontra um produto pelo id",
+     *      description="Retorna um objeto de produto",
+     *      path="/api/produtos/{id}",
+     *      @OA\Parameter(
+     *          name="id",
+     *          in="path",
+     *          description="ID do produto para retorno",
+     *          required=true,
+     *      ),
+     *      @OA\Response(response="200", description="produto encontrado"),
+     *      @OA\Response(
+     *         response=404,
+     *         description="Produto não encontrado"
+     *     ),
+     * )
+     *
+     * @param int $id
+    */
     public function getOne($id)
     {
         $produto = Produto::find($id);

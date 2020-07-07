@@ -16,6 +16,16 @@ class AdicionalController extends Controller
         //
     }
 
+    /**
+     * @OA\Get(
+     *     tags={"adicionais"},
+     *     summary="Retorna uma lista de adicionais",
+     *     description="Retorna um objeto de adicionais",
+     *     path="/api/adicionais",
+     *     @OA\Response(response="200", description="Uma lista com adicionais"),
+     * ),
+     *
+    */
     public function getAll()
     {
         return response()->json(Adicional::all(), 200);
