@@ -29,4 +29,5 @@ $router->group(['prefix' => 'api'], function () use ($router) {
 
     $router->get('pedidos', 'PedidoController@getAll');
     $router->get('pedidos/{id}', 'PedidoController@getOne');
+    $router->post('pedidos', 'PedidoController@create');
 });

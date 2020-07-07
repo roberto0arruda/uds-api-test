@@ -18,6 +18,19 @@ class Pedido extends Model
         'valor_total',
         'tempo_preparo'
     ];
+
+    protected $casts = [
+        'adicionais' => 'array',
+        'created_at' => 'datetime:d-m-Y h:m:s'
+    ];
+
+    public function produto()
+    {
+        return $this->belongsTo(Produto::class);
+    }
+
+    public function sabor()
+    {
+        return $this->belongsTo(Sabor::class);
+    }
 }
-
-
