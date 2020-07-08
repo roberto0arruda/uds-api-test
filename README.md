@@ -13,6 +13,8 @@ Documentation for the framework can be found on the [Lumen website](https://lume
 
 ## Documentation this project
 
+Documentation for the api can be found on the [UDS - Lumen API](http://api-test-backend.herokuapp.com/api/documentation).
+
 ### How to set up file permissions for Laravel
 
 **Your user as owner**
