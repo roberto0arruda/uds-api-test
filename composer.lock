@@ -4,8 +4,60 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4be8fced66fbffeff2568a82e343bfc0",
+    "content-hash": "a1d79778ad1a7f55185d4cdd7a7b793e",
     "packages": [
+        {
+            "name": "asm89/stack-cors",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/asm89/stack-cors.git",
+                "reference": "23f469e81c65e2fb7fc7bce371fbdc363fe32adf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/asm89/stack-cors/zipball/23f469e81c65e2fb7fc7bce371fbdc363fe32adf",
+                "reference": "23f469e81c65e2fb7fc7bce371fbdc363fe32adf",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0",
+                "symfony/http-foundation": "~2.7|~3.0|~4.0|~5.0",
+                "symfony/http-kernel": "~2.7|~3.0|~4.0|~5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6|^7|^8|^9",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Asm89\\Stack\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander",
+                    "email": "iam.asm89@gmail.com"
+                }
+            ],
+            "description": "Cross-origin resource sharing library and stack middleware",
+            "homepage": "https://github.com/asm89/stack-cors",
+            "keywords": [
+                "cors",
+                "stack"
+            ],
+            "time": "2020-05-31T07:17:05+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.8.15",
@@ -57,6 +109,129 @@
                 }
             ],
             "time": "2020-04-15T15:59:35+00:00"
+        },
+        {
+            "name": "darkaonline/swagger-lume",
+            "version": "7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DarkaOnLine/SwaggerLume.git",
+                "reference": "f51914718ab6a9b23c66febdef82d26da2f2fad8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DarkaOnLine/SwaggerLume/zipball/f51914718ab6a9b23c66febdef82d26da2f2fad8",
+                "reference": "f51914718ab6a9b23c66febdef82d26da2f2fad8",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/lumen-framework": "~6.0|~7.0",
+                "php": ">=7.2",
+                "swagger-api/swagger-ui": "^3.0",
+                "zircote/swagger-php": "~2.0|3.*"
+            },
+            "require-dev": {
+                "fzaninotto/faker": "~1.8",
+                "mockery/mockery": "1.*",
+                "phpunit/phpunit": "8.*",
+                "satooshi/php-coveralls": "^2.0",
+                "vlucas/phpdotenv": "~3.3|~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "SwaggerLume\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Darius Matulionis",
+                    "email": "darius@matulionis.lt"
+                }
+            ],
+            "description": "Swagger integration to Lumen 5",
+            "keywords": [
+                "laravel",
+                "lumen",
+                "swagger"
+            ],
+            "time": "2020-03-26T09:34:03+00:00"
+        },
+        {
+            "name": "doctrine/annotations",
+            "version": "1.10.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/annotations.git",
+                "reference": "5db60a4969eba0e0c197a19c077780aadbc43c5d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/5db60a4969eba0e0c197a19c077780aadbc43c5d",
+                "reference": "5db60a4969eba0e0c197a19c077780aadbc43c5d",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/lexer": "1.*",
+                "ext-tokenizer": "*",
+                "php": "^7.1 || ^8.0"
+            },
+            "require-dev": {
+                "doctrine/cache": "1.*",
+                "phpunit/phpunit": "^7.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.9.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Common\\Annotations\\": "lib/Doctrine/Common/Annotations"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Docblock Annotations Parser",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "annotations",
+                "docblock",
+                "parser"
+            ],
+            "time": "2020-05-25T17:24:27+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -336,6 +511,82 @@
                 "validator"
             ],
             "time": "2020-06-16T20:11:17+00:00"
+        },
+        {
+            "name": "fruitcake/laravel-cors",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fruitcake/laravel-cors.git",
+                "reference": "dbfc311b25d4873c3c2382b26860be3567492bd6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fruitcake/laravel-cors/zipball/dbfc311b25d4873c3c2382b26860be3567492bd6",
+                "reference": "dbfc311b25d4873c3c2382b26860be3567492bd6",
+                "shasum": ""
+            },
+            "require": {
+                "asm89/stack-cors": "^2.0.1",
+                "illuminate/contracts": "^5.6|^6.0|^7.0|^8.0",
+                "illuminate/support": "^5.6|^6.0|^7.0|^8.0",
+                "php": ">=7.1",
+                "symfony/http-foundation": "^4.0|^5.0",
+                "symfony/http-kernel": "^4.0|^5.0"
+            },
+            "require-dev": {
+                "laravel/framework": "^5.5|^6.0|^7.0|^8.0",
+                "orchestra/dusk-updater": "^1.2",
+                "orchestra/testbench": "^3.5|^4.0|^5.0|^6.0",
+                "orchestra/testbench-dusk": "^5.1",
+                "phpro/grumphp": "^0.16|^0.17",
+                "phpunit/phpunit": "^6.0|^7.0|^8.0",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Fruitcake\\Cors\\CorsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Fruitcake\\Cors\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fruitcake",
+                    "homepage": "https://fruitcake.nl"
+                },
+                {
+                    "name": "Barry vd. Heuvel",
+                    "email": "barryvdh@gmail.com"
+                }
+            ],
+            "description": "Adds CORS (Cross-Origin Resource Sharing) headers support in your Laravel application",
+            "keywords": [
+                "api",
+                "cors",
+                "crossdomain",
+                "laravel"
+            ],
+            "funding": [
+                {
+                    "url": "https://github.com/barryvdh",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-05-31T07:30:16+00:00"
         },
         {
             "name": "illuminate/auth",
@@ -2320,6 +2571,63 @@
             "time": "2020-03-29T20:13:32+00:00"
         },
         {
+            "name": "swagger-api/swagger-ui",
+            "version": "v3.28.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/swagger-api/swagger-ui.git",
+                "reference": "3cef22736827b933b0f116e33847a47f7724bd16"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/swagger-api/swagger-ui/zipball/3cef22736827b933b0f116e33847a47f7724bd16",
+                "reference": "3cef22736827b933b0f116e33847a47f7724bd16",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Anna Bodnia",
+                    "email": "anna.bodnia@gmail.com"
+                },
+                {
+                    "name": "Buu Nguyen",
+                    "email": "buunguyen@gmail.com"
+                },
+                {
+                    "name": "Josh Ponelat",
+                    "email": "jponelat@gmail.com"
+                },
+                {
+                    "name": "Kyle Shockey",
+                    "email": "kyleshockey1@gmail.com"
+                },
+                {
+                    "name": "Robert Barnwell",
+                    "email": "robert@robertismy.name"
+                },
+                {
+                    "name": "Sahar Jafari",
+                    "email": "shr.jafari@gmail.com"
+                }
+            ],
+            "description": " Swagger UI is a collection of HTML, Javascript, and CSS assets that dynamically generate beautiful documentation from a Swagger-compliant API.",
+            "homepage": "http://swagger.io",
+            "keywords": [
+                "api",
+                "documentation",
+                "openapi",
+                "specification",
+                "swagger",
+                "ui"
+            ],
+            "time": "2020-06-29T12:43:36+00:00"
+        },
+        {
             "name": "symfony/console",
             "version": "v5.1.2",
             "source": {
@@ -2414,16 +2722,16 @@
         },
         {
             "name": "symfony/deprecation-contracts",
-            "version": "v2.1.2",
+            "version": "v2.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/deprecation-contracts.git",
-                "reference": "dd99cb3a0aff6cadd2a8d7d7ed72c2161e218337"
+                "reference": "5e20b83385a77593259c9f8beb2c43cd03b2ac14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/dd99cb3a0aff6cadd2a8d7d7ed72c2161e218337",
-                "reference": "dd99cb3a0aff6cadd2a8d7d7ed72c2161e218337",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/5e20b83385a77593259c9f8beb2c43cd03b2ac14",
+                "reference": "5e20b83385a77593259c9f8beb2c43cd03b2ac14",
                 "shasum": ""
             },
             "require": {
@@ -2433,6 +2741,10 @@
             "extra": {
                 "branch-alias": {
                     "dev-master": "2.1-dev"
+                },
+                "thanks": {
+                    "name": "symfony/contracts",
+                    "url": "https://github.com/symfony/contracts"
                 }
             },
             "autoload": {
@@ -2470,7 +2782,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-27T08:34:37+00:00"
+            "time": "2020-06-06T08:49:21+00:00"
         },
         {
             "name": "symfony/error-handler",
@@ -4121,6 +4433,83 @@
             "time": "2020-05-30T20:35:19+00:00"
         },
         {
+            "name": "symfony/yaml",
+            "version": "v5.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "ea342353a3ef4f453809acc4ebc55382231d4d23"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/ea342353a3ef4f453809acc4ebc55382231d4d23",
+                "reference": "ea342353a3ef4f453809acc4ebc55382231d4d23",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/deprecation-contracts": "^2.1",
+                "symfony/polyfill-ctype": "~1.8"
+            },
+            "conflict": {
+                "symfony/console": "<4.4"
+            },
+            "require-dev": {
+                "symfony/console": "^4.4|^5.0"
+            },
+            "suggest": {
+                "symfony/console": "For validating YAML files using the lint command"
+            },
+            "bin": [
+                "Resources/bin/yaml-lint"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Yaml\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Yaml Component",
+            "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-05-20T17:43:50+00:00"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v4.1.7",
             "source": {
@@ -4259,6 +4648,69 @@
                 }
             ],
             "time": "2020-06-15T23:49:30+00:00"
+        },
+        {
+            "name": "zircote/swagger-php",
+            "version": "3.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zircote/swagger-php.git",
+                "reference": "fa47d62c22c95272625624fbf8109fa46ffac43b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zircote/swagger-php/zipball/fa47d62c22c95272625624fbf8109fa46ffac43b",
+                "reference": "fa47d62c22c95272625624fbf8109fa46ffac43b",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/annotations": "*",
+                "php": ">=7.2",
+                "symfony/finder": ">=2.2",
+                "symfony/yaml": ">=3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=8",
+                "squizlabs/php_codesniffer": ">=3.3",
+                "zendframework/zend-form": "<2.8"
+            },
+            "bin": [
+                "bin/openapi"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "OpenApi\\": "src"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Robert Allen",
+                    "email": "zircote@gmail.com",
+                    "homepage": "http://www.zircote.com"
+                },
+                {
+                    "name": "Bob Fanger",
+                    "email": "bfanger@gmail.com",
+                    "homepage": "http://bfanger.nl"
+                }
+            ],
+            "description": "swagger-php - Generate interactive documentation for your RESTful API using phpdoc annotations",
+            "homepage": "https://github.com/zircote/swagger-php/",
+            "keywords": [
+                "api",
+                "json",
+                "rest",
+                "service discovery"
+            ],
+            "time": "2020-05-07T09:10:49+00:00"
         }
     ],
     "packages-dev": [
