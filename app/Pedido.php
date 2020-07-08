@@ -4,6 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * @OA\Schema(@OA\Xml(name="Pedido"))
+ */
 class Pedido extends Model
 {
     /**

@@ -32,6 +32,33 @@ class PedidoController extends Controller
         return response()->json(Pedido::with('produto', 'sabor')->get(), 200);
     }
 
+     /**
+     * @OA\Get(path="/api/pedidos/{id}",
+     *   tags={"pedidos"},
+     *   summary="Encontra um pedido pelo seu id",
+     *   description="Para uma resposta válida, tente IDs inteiros com os valores> = 1 e <= 10. Outros valores gerarão exceções",
+     *   operationId="getOne",
+     *   @OA\Parameter(
+     *     name="id",
+     *     in="path",
+     *     description="ID do pedido que precisa ser buscado",
+     *     required=true,
+     *     @OA\Schema(
+     *         type="integer",
+     *         format="int64",
+     *         minimum=1.0,
+     *         maximum=10.0
+     *     )
+     *   ),
+     *   @OA\Response(
+     *     response=200,
+     *     description="operação bem sucedida",
+     *     @OA\Schema(ref="#/components/schemas/Pedido")
+     *   ),
+     *   @OA\Response(response=400, description="ID inválido fornecido"),
+     *   @OA\Response(response=404, description="Pedido não encontrado")
+     * )
+     */
     public function getOne($id)
     {
         $pedido = Pedido::find($id);
@@ -43,6 +70,25 @@ class PedidoController extends Controller
         }
     }
 
+    /**
+     * @OA\Post(path="/api/pedidos",
+     *   tags={"pedidos"},
+     *   summary="Armazena um novo pedido no Banco de Dados",
+     *   description="",
+     *   operationId="createPedidos",
+     *   @OA\RequestBody(
+     *       required=true,
+     *       description="pedido feito para a compra do açai",
+     *       @OA\JsonContent(ref="#/components/schemas/Pedido")
+     *   ),
+     *   @OA\Response(
+     *     response=200,
+     *     description="successful operation",
+     *     @OA\Schema(ref="#/components/schemas/Pedido")
+     *   ),
+     *   @OA\Response(response=400, description="Invalid Pedido")
+     * )
+     */
     public function create(Request $request)
     {
         $this->validate($request, [

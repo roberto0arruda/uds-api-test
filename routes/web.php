@@ -19,6 +19,7 @@ $router->group(['prefix' => 'api'], function () use ($router) {
     $router->get('produtos', 'ProdutoController@getAll');
     $router->get('produtos/{id}', 'ProdutoController@getOne');
     $router->post('produtos', 'ProdutoController@create');
+    $router->put('produtos/{id}', 'ProdutoController@update');
     $router->delete('produtos/{id}', 'ProdutoController@delete');
 
     $router->get('sabores', 'SaborController@getAll');
